@@ -76,39 +76,6 @@ function Projects() {
   const x = useTransform(scrollYProgress, [0, 1], ['20%', '-95%']);
 
   return (
-    // <section ref={targetRef} className="py-16 project-bg h-[300vh]">
-    //   <h2 className="text-6xl lg:text-9xl text-center mb-8 py-16">
-    //     <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-    //       Pro{txt}
-    //     </motion.span>
-    //   </h2>
-    //   <div className="sticky top-0 hidden md:flex h-screen items-center overflow-hidden">
-    //     <motion.div style={{ x }} className="flex gap-7">
-    //       {Projects.map((project, index) => (
-    //         <motion.div key={index} className="projectItem flex-none bg-gray-200 w-[300px] h-[200px] p-4 rounded-lg shadow-lg hover:shadow-xl">
-    //           <h1 className="text-2xl font-semibold">{project.title}</h1>
-    //           <p className="text-lg">{project.des}</p>
-    //           <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-    //             Visit Project
-    //           </a>
-    //         </motion.div>
-    //       ))}
-    //     </motion.div>
-    //   </div>
-
-    //   <div className="flex flex-col md:hidden gap-14 px-24">
-    //     {Projects.map((project, index) => (
-    //       <div key={index} className="projectItem bg-gray-200 w-full h-auto p-4 rounded-lg shadow-lg hover:shadow-xl">
-    //         <h1 className="text-xl font-semibold">{project.title}</h1>
-    //         <p className="text-md">{project.des}</p>
-    //         <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-    //           Visit Project
-    //         </a>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </section>
-
     <section ref={targetRef} className="py-16 project-bg h-[300vh]">
       <h2 className="text-6xl lg:text-9xl text-center mb-8 py-16">
         <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
@@ -127,11 +94,6 @@ function Projects() {
               rel="noopener noreferrer"
               className="flex flex-col justify-start border border-[#7a3ad3] rounded-lg shadow md:flex-row md:max-w-xl project-card w-[400px] h-[400px] hover:scale-110 duration-150 bg-star"
             >
-              {/* <img
-                src={`https://via.placeholder.com/150?text=${project.title}`}
-                alt={project.title}
-                className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              /> */}
               <div className="flex flex-col justify-between pl-4 py-7">
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{project.title}</h5>
                 <p className="font-normal text-gray-700 dark:text-gray-400">{project.des}</p>

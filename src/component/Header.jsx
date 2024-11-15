@@ -1,16 +1,12 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 function Header() {
   return (
-    <header className="flex justify-between items-center p-6 bg-[#1A0B2E] border-b-2 border-purple-600 rounded-lg">
-      <h1 className="text-xl font-bold">Krishant Chauhan</h1>
-      <nav>
-        <ul className="flex gap-6">
-          <li>Home</li>
-          <li>About</li>
-          <li>Lab</li>
-        </ul>
-      </nav>
+    <header className="fixed top-0 left-0 w-full z-10 flex justify-between items-center p-6 bg-[#1A0B2E] border-b-2 border-purple-600 rounded-lg">
+      <div>
+        <FaGithub size={40} />
+      </div>
     </header>
   );
 }
