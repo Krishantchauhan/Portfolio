@@ -34,12 +34,14 @@ function HeroSection() {
             I'm {fname}
           </motion.span>
         </h2>
-        <h2 className="text-4xl md:text-8xl md:mt-8  lg:text-8xl lg:mt-16 lg:px-48">
+        <h2 className="text-4xl mt-4 md:text-8xl md:mt-8  lg:text-8xl lg:mt-16 lg:px-48">
           <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{lname}</div>
           </motion.span>
         </h2>
-        <p className="text-xl mt-32 md:py-7 md:px-14 ">A Software Engineer | BCA & MCA Graduate, building delightful user experiences.</p>
+        {/* <div className="text-xl mt-32 md:py-7 md:px-14 ">
+          <Education />
+        </div> */}
       </div>
     </section>
   );

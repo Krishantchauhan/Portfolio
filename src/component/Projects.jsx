@@ -84,7 +84,7 @@ function Projects() {
       </h2>
 
       {/* Horizontal Scroll for md+ */}
-      <div className="sticky top-0 hidden md:flex h-screen items-center overflow-hidden">
+      <div className="sticky top-0 hidden md:flex md:h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-7">
           {Projects.map((project, index) => (
             <motion.a
@@ -104,14 +104,14 @@ function Projects() {
       </div>
 
       {/* Vertical Stack for sm screens */}
-      <div className="flex flex-col md:hidden gap-4 px-4">
+      <div className="flex flex-col md:hidden gap-4 px-4 h-40">
         {Projects.map((project, index) => (
           <a
             key={index}
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center g-white border border-[#58269f] project-card w-[400px] h-[400px] rounded-lg shadow md:flex-row md:max-w-xl"
+            className="w-[200px] h-[200px] flex flex-col items-center g-white border border-[#58269f] project-card md:w-[400px] md:h-[400px] rounded-lg shadow md:flex-row md:max-w-xl"
           >
             {/* <img
               src={`https://via.placeholder.com/150?text=${project.title}`}

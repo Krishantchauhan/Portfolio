@@ -7,10 +7,10 @@ function Projects() {
     <section className="">
       {/* <div className="skills-bg"></div> */}
       <div className=" flex justify-center">
-        <h1 className="text-8xl">S{skills}</h1>
+        <h1 className="text-6xl md:text-8xl">S{skills}</h1>
       </div>
 
-      <div className="mx-36 mt-20 grid grid-cols-4 space-y-8 space-x-7 pl-32 pb-24">
+      <div className="grid grid-cols-3 space-y-8 space-x-7  md:mx-36 md:mt-20 md:grid-cols-4 md:pl-32 md:pb-24 ">
         <div className="group relative Javascript mt-7 ml-7">
           <div className="block group-hover:hidden ">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" fill="#ffffff">
@@ -100,17 +100,6 @@ function Projects() {
         </div>
         <div className=" CSS">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-            <linearGradient
-              id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1"
-              x1="16.33"
-              x2="32.293"
-              y1="-2.748"
-              y2="41.109"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0" stop-color="#2aa4f4"></stop>
-              <stop offset="1" stop-color="#007ad9"></stop>
-            </linearGradient>
             <path
               fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)"
               d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z"
