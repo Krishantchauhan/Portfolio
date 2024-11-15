@@ -76,7 +76,7 @@ function Projects() {
   const x = useTransform(scrollYProgress, [0, 1], ['20%', '-95%']);
 
   return (
-    <section ref={targetRef} className="py-16 project-bg h-[300vh]">
+    <section ref={targetRef} className="h-[120vh]  md:py-16 project-bg md:h-[300vh]">
       <h2 className="text-6xl lg:text-9xl text-center mb-8 py-16">
         <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           Pro{txt}

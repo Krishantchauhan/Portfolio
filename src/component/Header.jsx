@@ -72,7 +72,7 @@ function Header() {
           </button>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <a href="/path/to/resume">
             <button className="border rounded-lg px-3 py-2 hover:scale-110 duration-200 hover:bg-[#42256b] border-purple-600">Resume</button>
           </a>
