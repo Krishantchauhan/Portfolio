@@ -10,7 +10,7 @@ function Projects() {
         <h1 className="text-6xl md:text-8xl">S{skills}</h1>
       </div>
 
-      <div className="grid grid-cols-3 space-y-8 space-x-7 pr-12  md:mx-36 md:mt-20 md:grid-cols-4 md:pl-32 md:pb-24 ">
+      <div className="grid grid-cols-3 ml-12 mt-16 space-y-8 space-x-7 pr-12  md:mx-36 md:mt-20 md:grid-cols-4 md:pl-32 md:pb-24 ">
         <div className="group relative Javascript mt-7 ml-7 md:mt-7 md:ml-7">
           <div className="block group-hover:hidden ">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" fill="#ffffff">

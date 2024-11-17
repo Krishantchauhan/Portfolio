@@ -6,7 +6,8 @@
   font-family: 'Fira Code', 'monospace';
   line-height: 1.5;
   font-weight: 400;
-
+  margin: 0%;
+  padding: 0%;
   /* color-scheme: dark; */
   color: rgba(255, 255, 255, 0.87);
   background-color: #11071f;
