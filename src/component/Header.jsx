@@ -37,6 +37,7 @@
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi'; // Hamburger and close icons
+import { motion } from 'framer-motion';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,18 +47,34 @@ function Header() {
       <div className="flex justify-between items-center p-4">
         {/* Full Menu for Medium and Larger Screens */}
         <nav className="hidden md:flex space-x-4 items-center">
-          <a href="https://github.com/Krishantchauhan" aria-label="GitHub">
-            <FaGithub className="hover:scale-125 duration-200" size={30} />
-          </a>
-          <a href="https://www.linkedin.com/in/krishant-chauhan/" aria-label="LinkedIn">
-            <FaLinkedin className="hover:scale-125 duration-200" size={30} />
-          </a>
-          <a href="https://leetcode.com/u/krishantchauhan/">
-            <button className="border rounded-lg px-3 py-2 hover:scale-110 duration-200 hover:bg-[#42256b] border-purple-600">Leetcode</button>
-          </a>
-          <a href="https://auth.geeksforgeeks.org/user/krishantchauhan">
-            <button className="border rounded-lg px-3 py-2 hover:scale-110 duration-200 hover:bg-[#42256b] border-purple-600">GFG</button>
-          </a>
+          <motion.a whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }} href="https://github.com/Krishantchauhan" aria-label="GitHub">
+            <FaGithub className="" size={30} />
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            href="https://www.linkedin.com/in/krishant-chauhan/"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin className="" size={30} />
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            href="https://leetcode.com/u/krishantchauhan/"
+          >
+            <button className="border rounded-lg px-3 py-2 hover:bg-[#42256b] border-purple-600">Leetcode</button>
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            href="https://auth.geeksforgeeks.org/user/krishantchauhan"
+          >
+            <button className="border rounded-lg px-3 py-2 hover:bg-[#42256b] border-purple-600">GFG</button>
+          </motion.a>
         </nav>
 
         {/* Email Section */}
@@ -73,9 +90,15 @@ function Header() {
         </div>
 
         <div className="hidden md:block">
-          <a href="/path/to/resume">
-            <button className="border rounded-lg px-3 py-2 hover:scale-110 duration-200 hover:bg-[#42256b] border-purple-600">Resume</button>
-          </a>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            href="/path/to/resume"
+            className="border rounded-lg px-3 py-2 hover:bg-[#42256b] border-purple-600"
+          >
+            Resume
+          </motion.button>
         </div>
       </div>
 

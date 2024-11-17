@@ -2,6 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 function Education() {
+  const fadeVariants = {
+    offscreen: { opacity: 0, y: 50 },
+    onscreen: { opacity: 1, y: 0, transition: { type: 'spring', bounce: 0.3, duration: 1 } },
+  };
+
   return (
     <>
       <section className="flex flex-col justify-center md:flex-row py-6 block-bg-hero px-10 w-full h-screen">
@@ -11,11 +16,10 @@ function Education() {
           {/* MCA Section - Sticky */}
           <motion.div
             className="flex flex-col md:mb-4 md:sticky md:top-0"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            variants={fadeVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ amount: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-semibold ">MCA</h1>
             <div className="pl-4 md:text-2xl md:pl-4">
@@ -28,11 +32,10 @@ function Education() {
           {/* BCA Section - Sticky after MCA */}
           <motion.div
             className="flex flex-col mb-4 md:sticky md:top-32"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            variants={fadeVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ amount: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-semibold ">BCA</h1>
             <div className="pl-4 md:text-2xl md:pl-4">
